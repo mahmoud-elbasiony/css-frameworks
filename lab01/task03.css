@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+body{
+    padding: 15px 15px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    width: 100%;
+    gap:2%;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidenav maincontent maincontent sidebar"
+    "foot foot foot foot";
+    max-width: 1000px;
+
+}
+
+.container>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(80, 112, 181);
+    height: 72px;
+}
+
+.sidenav{
+    grid-area: sidenav;
+    background-color: rgb(185, 95, 33);
+    min-height: 30vh;
+}
+.main-content{
+    min-height: 60vh;
+    grid-area: maincontent;
+    background-color: rgb(129, 164, 60);
+
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(185, 95, 33);
+    min-height: 30vh;
+
+}
+.foot{
+    grid-area: foot;
+    background-color: rgb(80, 112, 181);
+    height: 72px;
+}
+
+
+@media (max-width: 576px) { 
+    .container{
+    grid-template-areas: 
+    "nav"
+    "sidenav"
+    "maincontent"
+    "sidebar"
+    "foot";
+    }
+}
+ 
+@media (min-width: 576px) and (max-width: 768px) { 
+    .container{
+        grid-template-areas: 
+        "nav nav nav"
+        "sidenav maincontent maincontent"
+        "sidebar sidebar sidebar"
+        "foot foot foot";
+        }
+}
+@media (min-width: 576px) and (max-width: 768px) { 
+    .container{
+        grid-template-areas: 
+        "nav nav nav"
+        "sidenav maincontent maincontent"
+        "sidebar sidebar sidebar"
+        "foot foot foot";
+        }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 991px) { 
+    .container{
+        grid-template-areas: 
+        "nav nav nav"
+        "sidenav maincontent maincontent"
+        "sidebar sidebar sidebar"
+        "foot foot foot";
+        }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px){ 
+    .container{
+        grid-template-areas: 
+        "nav nav nav nav"
+        "sidenav maincontent maincontent sidebar"
+        "foot foot foot foot";
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1400px){ 
+    .container{
+        grid-template-areas: 
+        "nav nav nav nav nav"
+        "sidenav maincontent maincontent maincontent sidebar"
+        "foot foot foot foot foot";
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container{
+        animation: rotate 3s ease-in-out;
+    }
+ }

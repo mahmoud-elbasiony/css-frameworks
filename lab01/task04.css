@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding: 5px;
+    display: grid;
+    grid-template-areas:   
+    "one one two" 
+    "three four two" 
+    "three five five";
+    width:300px;
+    height:300px;
+    gap:3px;
+    background-color: aqua;
+    transform: rotate(45deg);
+    /* animation: rotate 3s ease-in-out; */
+}
+
+.container>div{
+    background-color: black;
+    color: aliceblue;
+
+}
+.child1{
+    grid-area: one;
+}
+.child2{
+    grid-area: two;
+}
+.child3{
+    grid-area: three;
+}
+.child4{
+    grid-area: four;
+}
+.child5{
+    grid-area: five;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(45deg) scale(1);
+    }
+    50%{
+        transform: rotate(360deg) scale(.5);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
+}
+@keyframes rotate1{
+    0%{
+        transform: rotate(45deg) scale(1);
+    }
+    50%{
+        transform: rotate(360deg) scale(.5);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .container{
+        
+        animation: rotate 3s ease-in-out;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 768px) { 
+    .container{
+        animation: rotate1 3s ease-in-out;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .container{
+        animation: rotate 3s ease-in-out;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) and (max-width: 1400px) { 
+    .container{
+        animation: rotate1 3s ease-in-out;
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container{
+        animation: rotate 3s ease-in-out;
+    }
+ }
