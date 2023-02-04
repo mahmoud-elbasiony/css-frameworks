@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Website created by Mads Kjaer - www.madskjaer.dk -->
+
+  <title>The Flower Blog</title>
+  <style>
+    li {
+      list-style: none;
+      text-decoration: none;
+    }
+
+    :root {
+      font-size: 10px;
+    }
+
+    /* *{
+      border:1px solid black;
+    } */
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+</head>
+
+<body class="pt-4 bg-light">
+  <!-- header site name -->
+  <h1 class="container col-8">The Flower Blog</h1>
+  <!-- navigation bar -->
+  <div class="container-fluid bg-dark d-none d-sm-block">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container col-10">
+          <a class="navbar-brand text-light fs-6" href="#">Blog</a>
+          <a class="navbar-brand text-light fs-6" href="#">About</a>
+          <a class="navbar-brand text-light fs-6" href="#">Archives</a>
+          <a class="navbar-brand text-light fs-6" href="#">Contacts</a>
+          <a class="navbar-brand text-light fs-6" href="#">Subscribe via. RSS</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark d-sm-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Archives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe via. RSS</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- intro image -->
+  <div class="container">
+    <div class="row">
+      <div class="card text-light  px-0 rounded-4 col-12 col-sm-10 offset-sm-1" style="background-color: rgb(172, 214, 16);">
+        <div class="col-9 offset-3">
+          <img src="Images\intro_flower.png" class="card-img  rounded-4" style="min-height: 200px;">
+        </div>
+        <div class="card-img-overlay col-6 p-5">
+          <h5 class="card-title fs-2">Do you love flowers as much as we do?</h5>
+          <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 offset-sm-1 pt-5">
+        <p class="h2 pb-5">This is the title of a blog post</p">
+        <p class="fs-6 text-muted">
+          Posted on June 29th 2009 by <a href="#" class="fs-6 text-muted">Mads Kjaer</a> - <a href="#comments"
+            class="fs-6 text-muted">3 comments</a></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu
+          orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum
+          vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet
+          id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet
+          metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam
+          adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis
+          sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur
+          ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl
+          sed enim consequat porttitor.
+        </p>
+
+        <!-- main content image -->
+        <div class="card col-7 mt-4 shadow bg-body-tertiary" style="width: 18rem;">
+          <img src="Images\flower.png" class="card-img-top">
+          <div class="card-body bg-light">
+            <p class="card-text ">This is a beautiful flower</p>
+          </div>
+        </div>
+        <p class="col-12 mt-4">
+          Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo, fringilla at
+          aliquet sit amet, volutpat non erat. Aenean molestie nibh vitae turpis venenatis
+          vel accumsan nunc tincidunt. Suspendisse id purus vel felis auctor mattis non ac
+          erat. Pellentesque sodales venenatis condimentum. Aliquam sit amet nibh nisi, ut
+          pulvinar est. Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum iaculis
+          ullamcorper diam consectetur sagittis. Quisque vitae mauris ut elit semper condimentum
+          varius nec nisl. Nulla tempus porttitor dolor ac eleifend. Proin vitae purus lectus,
+          a hendrerit ipsum. Aliquam mattis lacinia risus in blandit.</p>
+        <p class="col-12 mt-4">
+          Vivamus vitae nulla dolor. Suspendisse eu lacinia justo. Vestibulum a felis ante,
+          non aliquam leo. Aliquam eleifend, est viverra semper luctus, metus purus commodo
+          elit, a elementum nisi lectus vel magna. Praesent faucibus leo sit amet arcu vehicula
+          sed facilisis eros aliquet. Etiam sodales, enim sit amet mollis vestibulum, ipsum
+          sapien accumsan lectus, eget ultricies arcu velit ut diam. Aenean fermentum luctus
+          nulla, eu malesuada urna consequat in. Pellentesque habitant morbi tristique senectus
+          et netus et malesuada fames ac turpis egestas. Pellentesque massa lacus, sodales
+          id facilisis ac, lobortis sed arcu. Donec hendrerit fringilla ligula, ac rutrum
+          nulla bibendum id. Cras sapien ligula, tincidunt eget euismod nec, ultricies eu
+          augue. Nulla vitae velit sollicitudin magna mattis eleifend. Nam enim justo, vulputate
+          vitae pretium ac, rutrum at turpis. Aenean id magna neque. Sed rhoncus aliquet viverra.</p>
+        <!-- comments -->
+        <hr class="border border-black border-1 opacity-50 my-5">
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <strong>George Washington</strong>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores delectus atque sequi. Aperiam
+                ea, velit fugit nulla similique sequi eos minima, earum quae impedit eius ullam, alias laboriosam.
+                Ipsam.
+                <br><span class="text-muted">June 29th 2009 at 23:35</span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>Benjamin Franklin</strong>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit possimus blanditiis provident
+                accusamus id, consequuntur magnam dolore perferendis modi eligendi iure facilis sint asperiores
+                veritatis expedita obcaecati labore ea.
+                <br><span class="text-muted">June 29th 2009 at 23:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Barack Obama</strong>
+
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit possimus blanditiis provident
+                accusamus id, consequuntur magnam dolore perferendis modi eligendi iure facilis sint asperiores
+                veritatis expedita obcaecati labore ea.
+                <br><span class="text-muted">June 29th 2009 at 23:40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- form  -->
+        <hr class="border border-black border-1 opacity-50 my-5">
+        <p class="h4 my-4">Post a comment</p>
+        <form class="form-floating needs-validation offset-1">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="website.com">
+            <label for="floatingInput">website</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+  <!--side bar  -->
+      <div class="col-12 col-sm-4 bg-dark bg-gradient p-4 bg-opacity-25" style="background-image: var(--bs-gradient);">
+        <div class="rounded-3 bg-light bg-primary bg-opacity-50 "  style="background-image: var(--bs-gradient);">
+          <div class="p-4">
+            <p class="h3">Categories</p>
+            <ul class="nav flex-column ">
+              <li class="nav-item">
+                <a class="nav-link active text-dark text-decoration-underline fs-6" aria-current="page" href="#">Lorem ipsum dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark text-decoration-underline fs-6" aria-current="page" href="#">Lorem ipsum dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark text-decoration-underline fs-6" aria-current="page" href="#">Lorem ipsum dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark text-decoration-underline fs-6" aria-current="page" href="#">Lorem ipsum dolor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rounded-3 bg-light bg-primary bg-opacity-50 mt-5"  style="background-image: var(--bs-gradient);">
+          <div class="p-4">
+            <p class="h3">Archive</p>
+            <ul class="nav flex-column ">
+              
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">December 2008</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">January 2009</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">February 2009</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">March 2009</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">April 2009</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">May 2009</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-decoration-underline fs-5" href="#">June 2009</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="container-fluid bg-dark py-4 mt-2">
+    <div class="contaier">
+      <div class="row">
+        <div class="col-12 offset-sm-1 col-sm-3 text-light text-align-start mb-4">
+          <p class="text-light h5">About</p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-12 col-sm-3 text-light text-align-start mb-4">
+          <p class="h5">Blogroll</p>
+          <ul class="nav flex-column ">
+            
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">NETTUTS+</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">FreelanceSwitch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">In The Woods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Netsetter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">PSDTUTS+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-3 text-light text-align-start mb-34">
+          <p class="h5">Popular</p>
+          <ul class="nav flex-column ">
+            
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">This is the title of a blog post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Lorem ipsum dolor sit amet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Consectetur adipisicing elit, sed do eiusmod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Duis aute irure dolor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Excepteur sint occaecat cupidatat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Reprehenderit in voluptate velit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Officia deserunt mollit anim id est laborum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light text-decoration-underline" href="#">Lorem ipsum dolor sit amet</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

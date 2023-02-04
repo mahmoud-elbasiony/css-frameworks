@@ -19,7 +19,7 @@ body{
     gap:3px;
     background-color: aqua;
     transform: rotate(45deg);
-    /* animation: rotate 3s ease-in-out; */
+    
 }
 
 .container>div{
@@ -42,6 +42,30 @@ body{
 .child5{
     grid-area: five;
 }
+
+/* animation on hover */
+
+.container:hover .child1{
+    animation: toright 3s ease-in-out;
+
+}
+.container:hover .child2{
+    animation: toup 3s ease-in-out;
+
+}
+.container:hover .child3{
+    animation: todown 3s ease-in-out;
+
+}
+.container:hover .child5{
+    animation: toleft 3s ease-in-out;
+
+}
+.container:hover{
+    animation: rotate 3s ease-in-out;
+}
+
+
 @keyframes rotate{
     0%{
         transform: rotate(45deg) scale(1);
@@ -53,30 +77,68 @@ body{
         transform: rotate(45deg) scale(1);
     }
 }
-@keyframes rotate1{
+/* 
+@keyframes toleft{
     0%{
-        transform: rotate(45deg) scale(1);
+        transform: translateX(0);
     }
     50%{
-        transform: rotate(360deg) scale(.5);
+        transform: translateX(50%);
+        
     }
     100%{
-        transform: rotate(45deg) scale(1);
+        transform: translateX(0);
     }
 }
+@keyframes toright{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50%);
+        
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes toup{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50%);
+        
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes todown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50%);
+        
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
 
 
 @media (max-width: 576px) { 
     .container{
-        
         animation: rotate 3s ease-in-out;
     }
+    
  }
-
+/*
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 576px) and (max-width: 768px) { 
     .container{
-        animation: rotate1 3s ease-in-out;
+        animation: rotate 3s ease-in-out;
     }
  }
 
@@ -90,7 +152,7 @@ body{
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1201px) and (max-width: 1400px) { 
     .container{
-        animation: rotate1 3s ease-in-out;
+        animation: rotate 3s ease-in-out;
     }
  }
 
@@ -100,3 +162,5 @@ body{
         animation: rotate 3s ease-in-out;
     }
  }
+
+ 
