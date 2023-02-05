@@ -10,5 +10,5 @@
 
 ## lab02
 
-> <a href="https://mahmoud-elbasiony.github.io/css-frameworks/lab02/template/MarkUp.html"> task01</a>
+> <a href="https://mahmoud-elbasiony.github.io/css-frameworks/lab02/template/MarkUp.html">Template</a>
 
