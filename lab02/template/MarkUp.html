@@ -25,9 +25,12 @@
 
 <body class="pt-4 bg-light">
   <!-- header site name -->
-  <h1 class="container col-8">The Flower Blog</h1>
+  <div class="container">
+    <h1 class="col-8 offset-md-1 ">The Flower Blog</h1>
+
+  </div>
   <!-- navigation bar -->
-  <div class="container-fluid bg-dark d-none d-sm-block">
+  <div class="container-fluid bg-dark d-none d-md-block">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container col-10">
@@ -40,7 +43,7 @@
       </nav>
     </div>
   </div>
-  <nav class="navbar navbar-dark bg-dark d-sm-none">
+  <nav class="navbar navbar-dark bg-dark d-md-none">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">menu</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -48,7 +51,7 @@
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">menu</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -79,11 +82,11 @@
   <!-- intro image -->
   <div class="container">
     <div class="row">
-      <div class="card text-light  px-0 rounded-4 col-12 col-sm-10 offset-sm-1" style="background-color: rgb(172, 214, 16);">
+      <div class="card text-light  px-0 rounded-4 col-12 col-md-10 offset-md-1" style="background-color: rgb(172, 214, 16);">
         <div class="col-9 offset-3">
-          <img src="Images\intro_flower.png" class="card-img  rounded-4" style="min-height: 200px;">
+          <img src="Images\intro_flower.png" class="card-img  rounded-4" style="min-height: 250px;">
         </div>
-        <div class="card-img-overlay col-9 col-sm-6 p-5">
+        <div class="card-img-overlay col-12 col-md-8 p-4">
           <h5 class="card-title fs-2">Do you love flowers as much as we do?</h5>
           <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -93,9 +96,9 @@
     </div>
   </div>
   <!-- main content -->
-  <div class="container">
+  <div class="container-sm">
     <div class="row">
-      <div class="col-12 col-sm-6 offset-sm-1 pt-5">
+      <div class="col-12 col-md-6 offset-md-1 pt-5">
         <p class="h2 pb-5">This is the title of a blog post</p">
         <p class="fs-6 text-muted">
           Posted on June 29th 2009 by <a href="#" class="fs-6 text-muted">Mads Kjaer</a> - <a href="#comments"
@@ -200,7 +203,7 @@
         <!-- form  -->
         <hr class="border border-black border-1 opacity-50 my-5">
         <p class="h4 my-4">Post a comment</p>
-        <form class="form-floating needs-validation offset-1">
+        <form class="form-floating needs-validation offset-1 mb-3">
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="Name">
             <label for="floatingInput">Name</label>
@@ -221,7 +224,7 @@
         </form>
       </div>
   <!--side bar  -->
-      <div class="col-12 col-sm-4 bg-dark bg-gradient p-4 bg-opacity-25" style="background-image: var(--bs-gradient);">
+      <div class="col-12 col-md-4 bg-dark bg-gradient p-4 bg-opacity-25" style="background-image: var(--bs-gradient);">
         <div class="rounded-3 bg-light bg-primary bg-opacity-50 "  style="background-image: var(--bs-gradient);">
           <div class="p-4">
             <p class="h3">Categories</p>
@@ -274,14 +277,14 @@
     </div>
   </div>
   <!-- footer -->
-  <footer class="container-fluid bg-dark py-4 mt-2">
+  <footer class="container-fluid bg-dark py-4 ">
     <div class="contaier">
       <div class="row">
-        <div class="col-12 offset-sm-1 col-sm-3 text-light text-align-start mb-4">
+        <div class="col-12 offset-md-1 col-md-3 text-light text-align-start mb-4">
           <p class="text-light h5">About</p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="col-12 col-sm-3 text-light text-align-start mb-4">
+        <div class="col-12 col-md-3 text-light text-align-start mb-4">
           <p class="h5">Blogroll</p>
           <ul class="nav flex-column ">
             
@@ -302,7 +305,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-sm-3 text-light text-align-start mb-34">
+        <div class="col-12 col-md-3 text-light text-align-start mb-34">
           <p class="h5">Popular</p>
           <ul class="nav flex-column ">
             
